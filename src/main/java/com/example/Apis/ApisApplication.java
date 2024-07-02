@@ -1,10 +1,13 @@
 package com.example.Apis;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ApisApplication {
+
+	LoggerFactory loggerFactory=
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApisApplication.class, args);
