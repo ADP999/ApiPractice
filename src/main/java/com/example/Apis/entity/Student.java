@@ -15,13 +15,13 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String Name;
-    @Column(name = "email")
+    @Column(name = "email", nullable = false)
     private String Email;
-    @Column(name = "address")
+    @Column(name = "address",nullable = false)
     private String Address;
-    @Column(name = "blood_group")
+    @Column(name = "blood_group", nullable = false)
     private String BloodGroup;
 
 }
