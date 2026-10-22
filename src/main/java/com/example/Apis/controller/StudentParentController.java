@@ -1,11 +1,12 @@
 package com.example.Apis.controller;
 
 
-import com.example.Apis.entity.Student;
 import com.example.Apis.entity.StudentParent;
 import com.example.Apis.service.StudentParentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,5 +24,11 @@ public class StudentParentController {
         @GetMapping("/getStudentParent")
         public List<StudentParent> getAllStudentParent(){
             return studentParentService.getAllStudentParent();
+        }
+        
+        @PostMapping
+        public String saveStudentDetail(@RequestBody StudentParent studentParent) {
+        	studentParentService.saveStudentDetails(studentParent);
+        	return "saved sucessfully";
         }
 }

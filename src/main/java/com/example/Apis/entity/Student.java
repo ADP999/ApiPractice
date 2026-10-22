@@ -16,12 +16,12 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "name", nullable = false)
-    private String Name;
+    private String name;
     @Column(name = "email", nullable = false)
-    private String Email;
+    private String email;
     @Column(name = "address",nullable = false)
-    private String Address;
+    private String address;
     @Column(name = "blood_group", nullable = false)
-    private String BloodGroup;
+    private String bloodGroup;
 
 }
