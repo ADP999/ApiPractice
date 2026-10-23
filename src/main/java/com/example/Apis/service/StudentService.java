@@ -9,5 +9,6 @@ public interface StudentService {
 
     List<Student> getAllStudent();
     String saveStudent(Student student);
+	Student getSingleId(Integer id);
 	
 }

@@ -25,5 +25,11 @@ public class StudentServiceImpl implements StudentService {
     	 return "saved sucessfully";
     }
 
+	@Override
+	public Student getSingleId(Integer id) {
+		
+		return studentRepository.getById(id);
+	}
+
 	
 }
